@@ -1,0 +1,162 @@
+.btn-first{
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-first:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(252 211 77);;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    transition: transform .75s;
+}
+
+.btn{
+    font-size: x-large;
+    border: 4px solid #1e2939;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    cursor: pointer;
+}
+
+.btn-second{
+    position: relative !important;
+    transition: all 1s;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.btn-second:hover{
+    color: white;
+}
+
+.btn-second::before{
+    content: "";
+    position: absolute !important;
+    left: 0px;
+    top: 0px;
+    height: 100%;;
+    width: 100%;
+    background-color: rgb(136 19 55);
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.btn-second:hover::before{
+    transform: translateX(0);
+}
+
+
+
+.btn-first:hover::before{
+    transform: rotate(0deg);
+}
+
+.btn-third{
+    position: relative;
+    transition: all 1.25s;
+}
+
+.btn-third:hover{
+    color: white;
+}
+
+.btn-third:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49 46 129);
+    z-index: -1;
+    transform: rotateY(90deg);
+    transition: all .75s;
+}
+
+.btn-third:hover:before{
+    transform: rotateY(0deg);
+}
+
+.btn-third:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49 46 129);
+    z-index: -1;
+    transform: rotateX(90deg);
+    transition: all .75s;
+}
+
+.btn-third:hover::after{
+    transform: rotateX(0deg);
+}
+
+/* Button 4 */
+.btn-fourth{
+position: relative;
+overflow: hidden;
+}
+
+.btn-fourth::before{
+    content: "Thank You!";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2 132 199);
+    transition: transform 1s;
+    transform: translateY(-100%);
+}
+
+.btn-fourth:hover::before{
+    transform: translateY(0);
+}
+
+/* Button 5 */
+
+.btn-fifth{
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.btn-fifth:hover{
+    background-color: oklch(0.514 0.222 16.935);
+    color: white;
+}
+
+.btn-fifth::before{
+    content: "";
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.5s;
+}
+
+.btn-fifth:hover::before{
+    transform: translateX(100%) rotate(45deg);
+}
+
+
